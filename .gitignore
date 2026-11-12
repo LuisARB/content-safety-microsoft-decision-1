@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.azure/
+.env
+.env.local
+*.local
+infra/main.json
+infra/reuse.json
+evaluation/results/
+coverage/
+tests/PolicyHarness/Generated.cs
+tests/PolicyHarness/bin/
+tests/PolicyHarness/obj/
+infra/*.bicepparam

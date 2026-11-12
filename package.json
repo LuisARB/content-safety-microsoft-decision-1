@@ -1,0 +1,33 @@
+{
+  "name": "insurance-decision-pilot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "npm run generate:policy && tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "generate:policy": "tsx scripts/generate-policy.ts",
+    "check:policy": "tsx scripts/generate-policy.ts --check",
+    "test:policy": "npm run generate:policy && tsx scripts/test-policy.ts",
+    "test:browser": "tsx scripts/browser-smoke.ts",
+    "evaluate": "tsx evaluation/cli.ts"
+  },
+  "dependencies": {
+    "@azure/msal-browser": "^4.25.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0",
+    "vitest": "^5.0.5"
+  }
+}

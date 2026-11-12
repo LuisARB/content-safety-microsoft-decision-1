@@ -1,0 +1,10 @@
+using './main.bicep'
+
+// Copy to pilot.bicepparam locally. Confirm model, SWA region and quota before deployment.
+param location = 'REPLACE_WITH_VERIFIED_REGION'
+param prefix = 'REPLACE'
+param tenantId = '00000000-0000-0000-0000-000000000000'
+param apiAudience = '00000000-0000-0000-0000-000000000000'
+param publisherEmail = 'REPLACE_WITH_PUBLISHER_EMAIL'
+param publisherName = 'Insurance pilot'
+param decisionDeploymentType = 'DataZoneStandard'

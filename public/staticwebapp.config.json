@@ -1,0 +1,14 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/*.{js,css,json,ico,png,svg}"]
+  },
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "no-referrer",
+    "X-Frame-Options": "DENY",
+    "Cache-Control": "no-store",
+    "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://login.microsoftonline.com https://*.azure-api.net; frame-src https://login.microsoftonline.com; object-src 'none'; base-uri 'self'; frame-ancestors 'none'",
+    "Cross-Origin-Opener-Policy": "same-origin-allow-popups"
+  }
+}
